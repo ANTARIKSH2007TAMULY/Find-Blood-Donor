@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ANTARIKSH2007TAMULY.github.io/Find-My-Donor",
+  "homepage": "https://antariksh2007tamuly.github.io/Find-Blood-Donor",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

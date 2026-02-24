@@ -9,7 +9,7 @@ import Spinner from "./components/spinner";
 
 
 import Requests from "./components/requests";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 const bloodGroups = ["A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-"];
 
@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
 
 
@@ -92,7 +92,7 @@ function App() {
             )
           }
         />
-      </Routes>    </BrowserRouter>
+      </Routes>    </HashRouter>
   );
 }
 
