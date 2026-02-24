@@ -9,9 +9,13 @@ Find Blood Donor is a lightweight, fast, and responsive React web application bu
 🌟 Features
 
 ✔ Blood Group Search – Users can filter and search for donors using their required blood type
+
 ✔ Responsive UI – Stylish and modern UI using Tailwind CSS
+
 ✔ Hash Routing – Smooth navigation without server reloading using React Router’s HashRouter
+
 ✔ Fast Performance – Built with Vite for instant loading and quick development
+
 ✔ Easily Hosted on GitHub Pages with a static front end
 
 
@@ -19,10 +23,14 @@ Find Blood Donor is a lightweight, fast, and responsive React web application bu
 
 This project is built with the following technologies:
 
-Technology	Purpose
 React	Frontend UI
+
 Vite	Development server and build tool
+
 Tailwind CSS	Styling and responsive design
+
 React Router (HashRouter)	Frontend routing
+
 JavaScript / JSX	Core logic and layouts
+
 HTML / CSS	Structure and styles
