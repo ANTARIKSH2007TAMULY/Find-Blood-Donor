@@ -1,36 +1,16 @@
-🩸 Find Blood Donor
+# React + Vite
 
-Codes At: https://github.com/ANTARIKSH2007TAMULY/Find-Blood-Donor-Code
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Live Demo: https://antariksh2007tamuly.github.io/Find-Blood-Donor/
+Currently, two official plugins are available:
 
-Find Blood Donor is a lightweight, fast, and responsive React web application built with Vite, Tailwind CSS, and React Router (HashRouter). It enables users to search for blood donors by blood group, view donor details, and help connect people who need blood with those who can donate.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-🌟 Features
+## React Compiler
 
-✔ Blood Group Search – Users can filter and search for donors using their required blood type
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-✔ Responsive UI – Stylish and modern UI using Tailwind CSS
+## Expanding the ESLint configuration
 
-✔ Hash Routing – Smooth navigation without server reloading using React Router’s HashRouter
-
-✔ Fast Performance – Built with Vite for instant loading and quick development
-
-✔ Easily Hosted on GitHub Pages with a static front end
-
-
-🧰 Tech Stack
-
-This project is built with the following technologies:
-
-React	Frontend UI
-
-Vite	Development server and build tool
-
-Tailwind CSS	Styling and responsive design
-
-React Router (HashRouter)	Frontend routing
-
-JavaScript / JSX	Core logic and layouts
-
-HTML / CSS	Structure and styles
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
