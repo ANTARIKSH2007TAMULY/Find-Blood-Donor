@@ -1,13 +1,12 @@
 export default function DonorCard({ donor, onRequest, isRequested }) {
 
-
   const availabilityStyle = donor.available
     ? "bg-green-100 text-green-700"
     : "bg-gray-200 text-gray-500";
 
-
+  // ✅ UPDATED: Button style now toggles instead of disabling
   const buttonStyle = isRequested
-    ? "bg-green-500 cursor-not-allowed"
+    ? "bg-yellow-500 hover:bg-yellow-600"
     : "bg-red-500 hover:bg-red-600";
 
   return (
@@ -30,7 +29,6 @@ export default function DonorCard({ donor, onRequest, isRequested }) {
         {donor.name}
       </h2>
 
-
       <p className="mb-3">
         <span className="font-semibold text-gray-700">Blood Group: </span>
         <span className="px-3 py-1 bg-red-100 text-red-600 font-medium rounded-full">
@@ -38,14 +36,12 @@ export default function DonorCard({ donor, onRequest, isRequested }) {
         </span>
       </p>
 
-
       <p className="mb-3">
         <span className="font-semibold text-gray-700">City: </span>
         <span className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
           {donor.address.city}-{donor.address.street}
         </span>
       </p>
-
 
       <p className="mb-4">
         <span className="font-semibold text-gray-700">Availability: </span>
@@ -56,14 +52,12 @@ export default function DonorCard({ donor, onRequest, isRequested }) {
         </span>
       </p>
 
-
       {donor.available && (
         <button
           onClick={() => onRequest(donor.id)}
-          disabled={isRequested}
           className={`w-full py-2 rounded-md text-white font-semibold transition duration-200 ${buttonStyle}`}
         >
-          {isRequested ? "Request Sent ✅" : "Request Help"}
+          {isRequested ? "Unsend Request ❌" : "Request Help"}
         </button>
       )}
     </div>

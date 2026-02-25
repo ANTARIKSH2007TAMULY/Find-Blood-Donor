@@ -6,8 +6,6 @@ import Banner from "./components/banner";
 import InfoSection from "./components/infosection";
 import ContactSection from "./components/contactsection";
 import Spinner from "./components/spinner";
-
-
 import Requests from "./components/requests";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
@@ -36,17 +34,17 @@ function App() {
     getData();
   }, []);
 
+  // ✅ UPDATED: Toggle request instead of only setting true
   function handleRequest(id) {
-    setRequestStatus((user) => ({
-      ...user,
-      [id]: true,
+    setRequestStatus((prev) => ({
+      ...prev,
+      [id]: !prev[id],
     }));
   }
 
   return (
     <HashRouter>
       <Navbar />
-
 
       <Routes>
         <Route
@@ -92,7 +90,8 @@ function App() {
             )
           }
         />
-      </Routes>    </HashRouter>
+      </Routes>
+    </HashRouter>
   );
 }
 
